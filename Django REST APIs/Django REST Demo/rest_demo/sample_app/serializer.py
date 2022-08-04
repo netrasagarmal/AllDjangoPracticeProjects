@@ -5,7 +5,7 @@ from rest_framework import serializers
 from .models import StudentModel
 
 # Create a model serializer
-class StudentSerializer(serializers.HyperlinkedModelSerializer):
+class StudentSerializer(serializers.ModelSerializer):
 	# specify model and fields
 	class Meta:
 		model = StudentModel
